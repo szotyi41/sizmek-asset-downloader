@@ -1,9 +1,21 @@
-# Fresh Chrome Extension boilerplate (Manifest V3)
+# <img src="public/icons/icon_48.png" width="45" align="left"> Sizmek Asset Downloader
 
-## Purpose
+My Chrome Extension
 
-This extension can be used as a boilerplate for creating new extensions for Chrome based browsers, like Google Chrome.
+## Features
 
-## What it does
+- Feature 1
+- Feature 2
 
-When installed it will write something to DevTools console (F12) at the three most common events: before page load, after page load and when the user clicks the extension button on browser top bar.
+## Install
+
+[**Chrome** extension]() <!-- TODO: Add chrome extension link inside parenthesis -->
+
+## Contribution
+
+Suggestions and pull requests are welcomed!.
+
+---
+
+This project was bootstrapped with [Chrome Extension CLI](https://github.com/dutiyesh/chrome-extension-cli)
+
