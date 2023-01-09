@@ -3,12 +3,12 @@ on:
   push:
   pull_request:
 jobs:
-  composer-install:
+  compress-extension:
     runs-on: ubuntu-latest
     steps:
       - uses: montudor/action-zip@v1
         with:
-          args: zip -qq -r vendor.zip vendor
+          args: zip -qq -r extension.zip *
       - uses: actions/upload-artifact@v2
         with:
-          name: vendor.zip
+          name: extension.zip
