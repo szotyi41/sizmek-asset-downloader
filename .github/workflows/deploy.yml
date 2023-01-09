@@ -12,4 +12,4 @@ jobs:
       - uses: actions/upload-artifact@v2
         with:
           name: Extension
-          path: extension.zip
+          path: ./extension.zip
