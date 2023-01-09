@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [10.x, 12.x, 14.x, 15.x]
+        node-version: [15.x]
     steps:
       - uses: actions/checkout@v2
 
@@ -16,13 +16,16 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
+      - name: Npm install
+        run: npm install
+
       - name: Npm run build
         run: npm run build
 
       - uses: montudor/action-zip@v1
         with:
           args: zip -qq -r extension.zip . -i "build/*" 
-          
+
       - uses: actions/upload-artifact@v2
         with:
           name: Extension
