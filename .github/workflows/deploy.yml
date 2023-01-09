@@ -1,13 +1,16 @@
 name: Continuous Integration
 on:
   push:
-  pull_request:
+    branches: [ master ]
 jobs:
   compress-extension:
     runs-on: ubuntu-latest
     steps:
-      - name: files
-        run: ls -al
+      - uses: actions/checkout@v2
+      - name: Print current working dir
+        run: |
+          ls -la $PWD
+          ls -la $GITHUB_WORKSPACE
       - uses: montudor/action-zip@v1
         with:
           args: zip -qq -r extension.zip . -i manifest.json before.js after.js background.js execute.js
