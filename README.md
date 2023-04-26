@@ -1,15 +1,16 @@
 # <img src="public/icons/icon_48.png" width="45" align="left"> Sizmek Asset Downloader
 
-My Chrome Extension
+The problem:
 
-## Features
-
-- Feature 1
-- Feature 2
+Adops colleagues does not get sizmek asset library urls to associate the creative assets with urls. With this simple extension you can download a `.csv` file which is contains the asset path and the url.
 
 ## Install
 
 [**Chrome** extension]() <!-- TODO: Add chrome extension link inside parenthesis -->
+
+## Usage
+
+Open Sizmek asset library and go to the folder where you want to collect your asset details.
 
 ## Contribution
 
@@ -18,4 +19,3 @@ Suggestions and pull requests are welcomed!.
 ---
 
 This project was bootstrapped with [Chrome Extension CLI](https://github.com/dutiyesh/chrome-extension-cli)
-
