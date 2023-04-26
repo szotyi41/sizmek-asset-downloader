@@ -1,4 +1,4 @@
-# <img src="public/icons/icon_48.png" width="45" align="left"> Sizmek Asset Downloader
+# Sizmek Asset Downloader
 
 The problem:
 
